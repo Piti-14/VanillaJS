@@ -1,15 +1,51 @@
 header {
     background-color: orange;
-}
-
-header img{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 a, li {
     color: orange;
+}
+
+li a{
+    text-decoration: none;
+}
+
+footer{
+    font-weight: bold;
+}
+
+#contenido_central{
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+    width: 100rem;
+}
+
+article img{
+    border: 1px solid black;
+}
+
+#contenido_resenyas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+}
+
+h2{
+    align-self: center;
+    font-weight: bold;
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 
