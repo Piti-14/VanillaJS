@@ -12,41 +12,69 @@ li a{
     text-decoration: none;
 }
 
-footer{
-    font-weight: bold;
-}
-
 #contenido_central{
     display: flex;
     flex-direction: row;
 }
 
 nav{
-    width: 100rem;
-}
-
-article img{
-    border: 1px solid black;
+    width: 25%;
 }
 
 #contenido_resenyas{
+    width: 66%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-content: space-around;
+}
+
+article img{
+    border: 1px solid black;
+    position: absolute;
+    align-self: start;
+    display: flex;
+    flex-direction: row;
+    height: ;
 }
 
 h2{
     align-self: center;
-    font-weight: bold;
+    font-size: xx-large;
 }
 
 article{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
 }
 
+.enlace_compra{
+    display: flex;
+    position: absolute;
+    margin-top: 14em;
+}
+
+.titulo{
+    align-self: center;
+}
+
+.autor{
+    align-self: center;
+}
+
+p.sinopsis{
+
+    align-self: center;
+}
+
+hr{
+    width: 100%;
+}
+
+footer{
+    font-weight: bold;
+}
 
 
