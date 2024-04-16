@@ -4,10 +4,11 @@
 
 body {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: space-around;
-    /* align-content: center; */
+    align-content: center;
     background-color: antiquewhite;
+    /*overflow-y: hidden;*/
 }
 
 .product-card {
