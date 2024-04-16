@@ -17,18 +17,25 @@ body {
 } */
 
 .product-card {
-    width: 35%;
-    height: 70%;
+    width: 90%;
+    height: 55%;
     display: flex;
     flex-direction: column;
     box-shadow: 10px 10px 25px 0px #3c3c3c;
     background-color: coral;
 }
 
-@media screen, (max-width: 600px), (max-height: 700px){
+@media screen and (min-width: 420px) and (min-height: 500px){
     .product-card {
-        width: 85%;
-        height: 60%;
+        width: 70%;
+        height: 65%;
+    }
+}
+
+@media screen and (min-width: 540px) and (min-height: 600px){
+    .product-card {
+        width: 55%;
+        height: 65%;
     }
 }
 
@@ -40,9 +47,7 @@ img {
 }
 
 .product-description {
-    padding-left: 1.4em;
-    padding-bottom: 2em;
-    width: auto;
+    padding: 0em;
 }
 
 .tag {
@@ -55,16 +60,19 @@ img {
 }
 
 .product-title {
+    font-size: 1em;
     margin: 0px;
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (min-width: 340px) {
     .product-title, .new-price {
-        font-size: 1em;
+        font-size: 2em;
     }
 
     .product-description {
-        padding: 0em;
+        padding-left: 1.4em;
+        padding-bottom: 2em;
+        width: auto;
     }
 }
 
@@ -95,6 +103,12 @@ img {
     align-items: center;
 }
 
+@media screen and (min-width:220px) {
+    .pricing {
+        flex-wrap: nowrap;
+    }
+}
+
 .stars {
     color: yellow;
     font-size: 1em;
@@ -113,33 +127,28 @@ button {
 #shop-button {
   display: flex;
   background-color: black;
-  padding: 10px 25px;
+  padding: 10px;
   border: none;
   border-radius: 5px;
-  width: 30%;
+  width: 100%;
   color: white;
   justify-content: space-evenly;
 }
 
-@media screen and (max-width: 1150px) {
-    #shop-button {
-        padding: 10px;
-    }
-}
-
-@media screen and (max-width: 950px) {
+@media screen and (min-width: 250px) {
     #shop-button {
         width: 45%;
-        padding: 10px;
     }
 }
 
-@media screen and (max-width: 250px) {
+@media screen and (min-width: 540px) {
     #shop-button {
-        width: 100%;
-        padding: 10px;
+        width: 12em;
+        padding: 10px 25px;
     }
 }
+
+
 
 .white {
     background: white;
