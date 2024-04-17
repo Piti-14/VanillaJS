@@ -1,11 +1,13 @@
 * {
     font-family: "Poppins", sans-serif;
+    color: white;
 }
 
 body {
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
-    align-content: space-around;
+    align-content: center;
     background-color: antiquewhite;
 }
 
@@ -108,15 +110,31 @@ img {
 .pricing {
     display: flex;
     flex-wrap: wrap;
-    width: 5em;
+    width: 15em;
     justify-content: space-evenly;
     align-items: center;
 }
 
+/* @media screen and (min-width:350px) {
+    .colors-price {
+        width: 18rem;
+        flex-wrap: nowrap;
+    }
 
-
-@media screen and (min-width:250px) {
     .pricing {
+        flex-wrap: nowrap;
+        width: 8rem;
+    }
+} */
+
+@media screen and (min-width: 350px){
+    .pricing {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .colors-price {
         flex-wrap: nowrap;
     }
 }
@@ -160,16 +178,18 @@ button {
     }
 }
 
-
-
 .white {
-    background: white;
+    background-color: white;
 }
 
 .grey {
-    background: grey;
+    background-color: grey;
 }
 
 .black {
-    background: black;
+    background-color: black;
+}
+
+.product-acquired {
+    padding-left: 1em;
 }
