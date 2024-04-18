@@ -11,7 +11,14 @@ document.querySelectorAll("button").forEach(btn => {
 
             document.querySelectorAll("img").item(0).src = newImage;
 
-            
+            let secondClass = document.querySelector("h3").classList[1];
+            console.log(secondClass);
+            if (secondClass == null) {
+                document.querySelector("h3").classList.add(color);
+            } else {
+                document.querySelector("h3").classList.remove(secondClass);
+                document.querySelector("h3").classList.add(color);
+            }
         })
     } else {
         btn.addEventListener("click", () => {
@@ -39,20 +46,3 @@ function replaceColor(imageURL, newColor) {
 
     return newImage;
 }
-
-
-/**
- *             
- * let secondClass = document.querySelector("h3").classList[1];
-
-    if (secondClass == null) {
-        document.querySelector("h3").classList.add(color);
-
-    } else if(document.querySelector("h3").classList){
-
-    }
- * 
- * 
- * 
- *  
- */
