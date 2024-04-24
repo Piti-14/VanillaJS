@@ -1,0 +1,11 @@
+.user-inputs{
+    border: none;
+}
+
+.user-inputs:invalid > * {
+    color: red;
+}
+
+fieldset {
+    width: fit-content;
+}
